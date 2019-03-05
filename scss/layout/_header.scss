@@ -1,0 +1,97 @@
+header{
+	//margin-top: 20px;
+	//margin-bottom: 20px;
+	position:fixed;
+	z-index: 200;
+	background:#fff;
+	width:100%;
+	padding: 20px 0;
+	.logo{
+		width:200px;
+		margin-left: 50px;
+
+	}
+	.cosmos{
+		width:200px;
+		margin-left: 50px;
+	}
+	.headerBox{
+		width:30%;
+		margin-left: -4px;
+		display: inline-block;
+		display: inline-grid;
+				text-align: center;
+						
+		p{
+
+			@include text(14px, $blue);
+			text-transform: uppercase;
+			margin-top: 10px;
+
+	
+
+		}
+		a{
+			text-decoration: none;
+			color: $blue;
+		}
+	}
+
+
+ }
+
+
+
+ @media only screen and (max-width : 1200px){
+header{
+	
+	position:static;
+
+ }
+}
+
+ @media only screen and (max-width : 1000px){
+	header{
+		 .headerBox{
+		 	margin-top: 20px;
+		 }
+
+
+	}
+
+ }
+	@media only screen and (max-width : 800px){
+
+		#index{
+			.polit{
+			min-height: 600px !important;
+
+				}
+			.perevagi{
+				padding-top: 20px;
+			}	
+
+		}
+
+	}
+
+@media only screen and (max-width : 500px){
+		header{
+			.logo{
+				width:80%;
+				margin-left: 10%;
+			}
+			.cosmos{
+				width:60%;
+				margin-left: 20%;
+				margin-top: 20px;
+			}
+			.headerBox{
+				width:33%;
+			}
+
+		}
+
+
+
+}
